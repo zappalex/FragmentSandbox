@@ -35,12 +35,29 @@
         android:id="@+id/add_fragment_btn"
         android:layout_width="match_parent"
         android:layout_height="68dp"
-        android:text="Add Fragment, No Backstack"/>
+        android:text="Add Fragment"/>
+
+    <Button
+        android:id="@+id/add_alternate_fragment_btn"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:text="Add Alternate Fragment"/>
+
+    <Button
+        android:id="@+id/remove_fragment_btn"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:text="Remove Fragment"/>
+
+    <Button
+        android:id="@+id/replace_fragment_btn"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:text="Replace Fragment"/>
 
     <FrameLayout
         android:id="@+id/fragment_frame_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
 
 </LinearLayout>
