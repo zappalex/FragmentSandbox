@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         setStaticFragmentOnClick()
         setDynamicFragmentOnClick()
+        setLifecycleFragmentOnClick()
     }
 
     fun setStaticFragmentOnClick() {
@@ -27,6 +28,13 @@ class MainActivity : AppCompatActivity() {
     fun setDynamicFragmentOnClick() {
         dynamic_fragment_btn.setOnClickListener {
             val intent = Intent(this, DynamicFragmentActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    fun setLifecycleFragmentOnClick() {
+        lifecycle_fragment_btn.setOnClickListener {
+            val intent = Intent(this, LifecycleActivity::class.java)
             startActivity(intent)
         }
     }

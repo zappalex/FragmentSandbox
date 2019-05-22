@@ -25,11 +25,12 @@
         android:text="Dynamic Fragment"/>
 
     <Button
+        android:id="@+id/lifecycle_fragment_btn"
         android:layout_width="match_parent"
         android:layout_height="84dp"
         android:textColor="@android:color/white"
         android:background="#8BC34A"
-        android:text="Placeholder 3"/>
+        android:text="Lifecycle Fragment"/>
 
     <Button
         android:layout_width="match_parent"
