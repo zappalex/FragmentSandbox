@@ -2,22 +2,21 @@ package com.example.kotlin.fragmentsandbox.Backstack
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import com.example.kotlin.fragmentsandbox.R
 import kotlinx.android.synthetic.main.activity_backstack.*
 
 /*
+    Explore Fragment Backstack, and Add / Remove / Replace
+    https://www.youtube.com/watch?v=EzUl88tzxH0&list=PLfuE3hOAeWhZDH-wHD0BJsJl7PpEW-wN8&index=5
+    https://www.youtube.com/watch?v=SNSjzH_gyK8&list=PLfuE3hOAeWhZDH-wHD0BJsJl7PpEW-wN8&index=6
  */
 
 class BackstackActivity : AppCompatActivity() {
-
-    val TAG = "BackstackActivity"
     val fragmentManager = supportFragmentManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_backstack)
-        Log.d(TAG, "onCreate()")
 
         val fragmentManager = supportFragmentManager
 
@@ -47,31 +46,6 @@ class BackstackActivity : AppCompatActivity() {
 
     }
 
-    override fun onStart() {
-        super.onStart()
-        Log.d(TAG, "onStart()")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.d(TAG, "onResume()")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.d(TAG, "onPause()")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.d(TAG, "onStop()")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d(TAG, "onDestroy()")
-    }
-
     fun addFragmentToBackstack() {
         // This must be created each time we use a commit as below, otherwise we'll get an exception
         val fragmentTransaction = fragmentManager.beginTransaction()
@@ -97,19 +71,18 @@ class BackstackActivity : AppCompatActivity() {
         val fragmentTransaction = fragmentManager.beginTransaction()
         val fragment = AlternateBackstackFragment()
 
-        // Without backstack, we cannot add multiple fragments in a row.  We must remove + add, or replace
         fragmentTransaction.add(R.id.fragment_frame_layout, fragment)
         fragmentTransaction.commit()
     }
 
     fun removeFragment() {
+        // When called without fragment, nothing will happen
         val fragment = fragmentManager.findFragmentById(R.id.fragment_frame_layout)
         if(fragment != null) {
             val fragmentTransaction = fragmentManager.beginTransaction()
             fragmentTransaction.remove(fragment)
             fragmentTransaction.commit()
         }
-
     }
 
     fun replaceFragment() {
