@@ -1,4 +1,4 @@
-package com.example.kotlin.fragmentsandbox.fragments
+package com.example.kotlin.fragmentsandbox.Lifecycle
 
 import android.content.Context
 import android.os.Bundle

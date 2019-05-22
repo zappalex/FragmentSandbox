@@ -1,9 +1,13 @@
-package com.example.kotlin.fragmentsandbox.activities
+package com.example.kotlin.fragmentsandbox.Dynamic
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kotlin.fragmentsandbox.R
-import com.example.kotlin.fragmentsandbox.fragments.DynamicFragment
+
+/*
+    Add Fragment Dynamically
+    https://www.youtube.com/watch?v=li12Kmvk7BQ&list=PLfuE3hOAeWhZDH-wHD0BJsJl7PpEW-wN8&index=3
+ */
 
 class DynamicFragmentActivity : AppCompatActivity() {
 

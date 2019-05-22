@@ -1,12 +1,12 @@
-package com.example.kotlin.fragmentsandbox.activities
+package com.example.kotlin.fragmentsandbox.Lifecycle
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.example.kotlin.fragmentsandbox.R
-import com.example.kotlin.fragmentsandbox.fragments.LifecycleFragment
 
 /*
+    Observe Activity and Fragment Lifecycles
     https://www.youtube.com/watch?v=GrPAVBOp_fk&list=PLfuE3hOAeWhZDH-wHD0BJsJl7PpEW-wN8&index=4
 
     - We can simulate normal functionality by adding the fragment at various points.
@@ -60,6 +60,14 @@ class LifecycleActivity : AppCompatActivity() {
         val fragmentTransaction = fragmentManager.beginTransaction()
         val fragment = LifecycleFragment()
 
+        /*
+            Note that we are only adding the fragment here, not adding to
+            Fragment back stack.  Therefore, when we press back, the fragment
+            and Activity will be removed together.
+
+            If We were to add to back stack, pressing back would only remove
+            the Fragment. 
+         */
         fragmentTransaction.add(R.id.fragment_frame_layout, fragment)
         fragmentTransaction.commit()
     }

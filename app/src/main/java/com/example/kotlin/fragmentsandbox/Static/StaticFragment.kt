@@ -1,4 +1,4 @@
-package com.example.kotlin.fragmentsandbox.fragments
+package com.example.kotlin.fragmentsandbox.Static
 
 import android.os.Bundle
 import android.support.v4.app.Fragment

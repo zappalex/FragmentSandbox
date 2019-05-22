@@ -1,10 +1,11 @@
-package com.example.kotlin.fragmentsandbox.activities
+package com.example.kotlin.fragmentsandbox
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.example.kotlin.fragmentsandbox.R
-import kotlinx.android.synthetic.main.activity_dynamic_fragment.*
+import com.example.kotlin.fragmentsandbox.Dynamic.DynamicFragmentActivity
+import com.example.kotlin.fragmentsandbox.Lifecycle.LifecycleActivity
+import com.example.kotlin.fragmentsandbox.Static.StaticFragmentActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

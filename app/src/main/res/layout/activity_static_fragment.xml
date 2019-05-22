@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.StaticFragmentActivity">
+    tools:context=".Static.StaticFragmentActivity">
 
     <fragment
         android:id="@+id/static_fragment"
-        android:name="com.example.kotlin.fragmentsandbox.fragments.StaticFragment"
+        android:name="com.example.kotlin.fragmentsandbox.Static.StaticFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="8dp" />
