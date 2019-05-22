@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Lifecycle.LifecycleActivity"
+    android:background="@color/lightGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment Count:"/>
+
+        <TextView
+            android:id="@+id/fragment_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_fragment_backstack_btn"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:text="Add Fragment to Backstack"/>
+
+    <Button
+        android:id="@+id/add_fragment_btn"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:text="Add Fragment, No Backstack"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

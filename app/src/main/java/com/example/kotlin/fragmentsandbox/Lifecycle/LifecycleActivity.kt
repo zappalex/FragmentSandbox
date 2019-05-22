@@ -60,14 +60,15 @@ class LifecycleActivity : AppCompatActivity() {
         val fragmentTransaction = fragmentManager.beginTransaction()
         val fragment = LifecycleFragment()
 
-        /*
+        /* =================================================================
             Note that we are only adding the fragment here, not adding to
             Fragment back stack.  Therefore, when we press back, the fragment
             and Activity will be removed together.
 
             If We were to add to back stack, pressing back would only remove
-            the Fragment. 
+            the Fragment.
          */
+
         fragmentTransaction.add(R.id.fragment_frame_layout, fragment)
         fragmentTransaction.commit()
     }

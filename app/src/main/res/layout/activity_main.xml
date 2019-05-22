@@ -33,11 +33,12 @@
         android:text="Lifecycle Fragment"/>
 
     <Button
+        android:id="@+id/backstack_fragment_btn"
         android:layout_width="match_parent"
         android:layout_height="84dp"
         android:textColor="@android:color/white"
         android:background="#7CB342"
-        android:text="Placeholder 4"/>
+        android:text="Backstack Fragment"/>
 
     <Button
         android:layout_width="match_parent"

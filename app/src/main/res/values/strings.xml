@@ -3,4 +3,5 @@
     <string name="title_activity_static_fragment">Static Fragment</string>
     <string name="title_activity_dynamic_fragment">Dynamic Fragment</string>
     <string name="title_activity_lifecycle_fragment">Lifecycle Fragment</string>
+    <string name="title_activity_backstack_fragment">Backstack Fragment</string>
 </resources>
