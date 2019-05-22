@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fragment Sandbox</string>
+    <string name="title_activity_static_fragment">Static Fragment</string>
+    <string name="title_activity_dynamic_fragment">Dynamic Fragment</string>
+</resources>
