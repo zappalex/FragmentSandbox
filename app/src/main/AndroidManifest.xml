@@ -10,15 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Backstack.BackstackActivity"
-            android:label="@string/title_activity_backstack_fragment"
+            android:name=".Interaction.FragmentInteractionActivity"
+            android:label="@string/title_activity_interaction_fragment"
             android:parentActivityName=".MainActivity"
             />
         <activity
+            android:name=".Backstack.BackstackActivity"
+            android:label="@string/title_activity_backstack_fragment"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".Lifecycle.LifecycleActivity"
             android:label="@string/title_activity_lifecycle_fragment"
-            android:parentActivityName=".MainActivity"
-            />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Dynamic.DynamicFragmentActivity"
             android:label="@string/title_activity_dynamic_fragment"

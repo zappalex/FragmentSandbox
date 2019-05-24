@@ -26,7 +26,7 @@ class LifecycleFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         Log.d(TAG, "onCreateView()")
-        return inflater.inflate(R.layout.lifecycle_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_lifecycle, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

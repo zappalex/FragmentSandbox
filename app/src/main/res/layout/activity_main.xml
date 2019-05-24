@@ -2,7 +2,6 @@
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
@@ -13,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="84dp"
         android:textColor="@android:color/white"
-        android:background="#AED581"
+        android:background="@color/green_extra_light"
         android:text="Static Fragment"/>
 
     <Button
@@ -21,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="84dp"
         android:textColor="@android:color/white"
-        android:background="#9CCC65"
+        android:background="@color/green_light"
         android:text="Dynamic Fragment"/>
 
     <Button
@@ -29,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="84dp"
         android:textColor="@android:color/white"
-        android:background="#8BC34A"
+        android:background="@color/green"
         android:text="Lifecycle Fragment"/>
 
     <Button
@@ -37,15 +36,15 @@
         android:layout_width="match_parent"
         android:layout_height="84dp"
         android:textColor="@android:color/white"
-        android:background="#7CB342"
+        android:background="@color/green_dark"
         android:text="Backstack Fragment"/>
 
     <Button
+        android:id="@+id/interaction_fragment_btn"
         android:layout_width="match_parent"
         android:layout_height="84dp"
         android:textColor="@android:color/white"
-        android:background="#689F38"
-        android:text="Placeholder 5"/>
-
+        android:background="@color/green_extra_dark"
+        android:text="Fragment Callback"/>
 
 </LinearLayout>

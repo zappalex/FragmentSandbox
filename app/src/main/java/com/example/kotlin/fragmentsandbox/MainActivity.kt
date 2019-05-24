@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kotlin.fragmentsandbox.Backstack.BackstackActivity
 import com.example.kotlin.fragmentsandbox.Dynamic.DynamicFragmentActivity
+import com.example.kotlin.fragmentsandbox.Interaction.FragmentInteractionActivity
 import com.example.kotlin.fragmentsandbox.Lifecycle.LifecycleActivity
 import com.example.kotlin.fragmentsandbox.Static.StaticFragmentActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         setDynamicFragmentOnClick()
         setLifecycleFragmentOnClick()
         setBackstackFragmentOnClick()
+        setInteractionFragmentOnClick()
     }
 
     fun setStaticFragmentOnClick() {
@@ -45,6 +47,13 @@ class MainActivity : AppCompatActivity() {
     fun setBackstackFragmentOnClick() {
         backstack_fragment_btn.setOnClickListener {
             val intent = Intent(this, BackstackActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    fun setInteractionFragmentOnClick() {
+        interaction_fragment_btn.setOnClickListener {
+            val intent = Intent( this, FragmentInteractionActivity::class.java)
             startActivity(intent)
         }
     }

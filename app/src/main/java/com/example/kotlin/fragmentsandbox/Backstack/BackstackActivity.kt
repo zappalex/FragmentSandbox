@@ -85,6 +85,7 @@ class BackstackActivity : AppCompatActivity() {
         }
     }
 
+    // when called and there are no fragments present, this will simply add
     fun replaceFragment() {
         val fragmentTransaction = fragmentManager.beginTransaction()
         val fragment = AlternateBackstackFragment()

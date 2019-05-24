@@ -5,4 +5,10 @@
     <color name="colorAccent">#D81B60</color>
     <color name="lightGray">#EEEEEE</color>
 
+    <color name="green_extra_light">#AED581</color>
+    <color name="green_light">#9CCC65</color>
+    <color name="green">#8BC34A</color>
+    <color name="green_dark">#7CB342</color>
+    <color name="green_extra_dark">#689F38</color>
+
 </resources>

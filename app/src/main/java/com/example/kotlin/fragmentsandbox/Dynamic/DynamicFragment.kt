@@ -8,7 +8,8 @@ import android.view.ViewGroup
 import com.example.kotlin.fragmentsandbox.R
 
 class DynamicFragment : Fragment() {
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.dynamic_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_dynamic, container, false)
     }
 }
